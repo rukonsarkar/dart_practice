@@ -113,4 +113,29 @@ void main(){
   print(persons); // Map Add New Element
 
 
+  var personMap = new Map();
+
+  personMap['name'] = 'Rasel';
+  personMap['age'] = '23';
+  personMap['city'] = 'Rajshahi';
+  personMap['country'] = 'America';
+
+  // var personMapResult = personMap.length;
+  // var personMapResult = personMap.keys;
+   var personMapResult = personMap.values;
+  // var personMapResult = personMap.isEmpty;
+  // var personMapResult = personMap.isNotEmpty;
+  print(personMapResult); // Map Constructor And Properties
+
+  var personDetails = {
+    'name' : 'Rukon',
+    'age' : 24,
+    'city' : 'Gazipur',
+    'height' : '5.3'
+  };
+  personDetails.addAll({'country' : 'Bangladeshi', 'blood' : 'AB+'});
+  //personDetails.clear();
+  personDetails.remove('age');
+  print(personDetails); // Map Add Remove Clear
+
 }

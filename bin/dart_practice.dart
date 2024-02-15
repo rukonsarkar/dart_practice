@@ -99,10 +99,18 @@ void main(){
   citySet.add("Khulna");
   citySet.addAll(['Comilla', 'Barishal', 'Rajshahi']);
   print(citySet); // Set With Add And Add ALL
-
   print(citySet.elementAt(4)); // Set Element At
+  //citySet.clear();
+  print(citySet.last); // Set clear & Properties
 
-  citySet.clear();
-  print(citySet); // Set clear
+  var persons = {
+    'name' : 'Rukon',
+    'age' : 24,
+    'city' : 'Gazipur',
+    'height' : '5.3'
+  };
+  persons['country'] = 'Bangladeshi';
+  print(persons); // Map Add New Element
+
 
 }

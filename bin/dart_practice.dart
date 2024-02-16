@@ -137,5 +137,97 @@ void main(){
   //personDetails.clear();
   personDetails.remove('age');
   print(personDetails); // Map Add Remove Clear
+  
+  var marks = 22;
+  
+  if(marks>=80 && marks <=100){
+    print("Result is A+");
+  } else if(marks>=70 && marks <80){
+    print("Result is A");
+  } else if(marks>=60 && marks <70){
+    print("Result is A-");
+  }  else if(marks>=50 && marks <60){
+    print("Result is B");
+  } else if(marks>=40 && marks <50){
+    print("Result is C");
+  } else if(marks>=33 && marks <40){
+    print("Result is D");
+  } else {
+    print("Result is F");
+  } // If Else Statements
+
+  var examMarks = 40 ;
+
+  switch(examMarks){
+    case 80:
+      print("A+");
+      break;
+
+    case 70:
+      print("A-");
+      break;
+
+    case 60:
+      print("B");
+      break;
+
+    case 50:
+      print("C");
+      break;
+
+    case 40:
+      print("D");
+      break;
+
+    default:
+      print("Result not found");
+      break; // switch - case
+  }
+
+  for(var i=0; i < 100; i=i+2){
+    print("Dart : "+i.toString()); // for loop
+  }
+
+  var AlphabetList = ['A','B','C','D','E','F','G','H','I','J','K'];
+
+  for(var OneAlphabet in AlphabetList){
+    print(OneAlphabet);
+  } // For in loop : List
+
+  var AlphabetSet = ['A','B','C','D','E','F'];
+
+  for(var OneAlphabet in AlphabetSet){
+    print(OneAlphabet);
+  } // For in loop : SET
+
+  var productList = [
+   {'name':'Soap', 'price':'120'},
+   {'name':'Sugar', 'price':'200'},
+   {'name':'Milk', 'price':'80'},
+   {'name':'Fish', 'price':'200'},
+   {'name':'cake', 'price':'50'},
+   {'name':'Potato', 'price':'70'}
+  ];
+
+  for(var OneProduct in productList){
+    var item = "Product name is ${OneProduct['name']} and price is ${OneProduct['price']}";
+    print(item);
+  } // For in loop : JSON FORMAT CODE
+
+  for(var i=0; i < 100; i=i+1){
+    print("For Loop : "+i.toString()); // for loop
+  }
+
+  var ii = 1;
+  while(ii<100){
+    print("While Loop : "+ii.toString());
+    ii = ii+1;
+  } // While Loop
+
+  var iii = 1 ;
+  do{
+    print("Do While Loop : "+iii.toString());
+    iii = iii+1;
+  } while(iii<=100); // Do While Loop
 
 }

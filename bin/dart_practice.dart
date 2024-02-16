@@ -230,4 +230,27 @@ void main(){
     iii = iii+1;
   } while(iii<=100); // Do While Loop
 
+  addTwoNumber(); // Function Define And Call
+  minusTwoNumber(10, 6);
+  minusTwoNumber(15, 5.60); // Passing Argument Inside Function
+
+  var multipleResult = multipleTwoNumber()+5; //Function Return And Main Function
+  print(multipleResult);
 }
+addTwoNumber(){
+  var a = 10 ;
+  var b = 5 ;
+  print(a+b);
+}
+
+minusTwoNumber(int x, double y){
+  print(x - y);
+}
+
+multipleTwoNumber(){
+  var a = 11 ;
+  var b = 5 ;
+  return (a*b);
+}
+
+
